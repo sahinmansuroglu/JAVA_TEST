@@ -1,0 +1,1 @@
+ - chrome’a selecturhub ekle
