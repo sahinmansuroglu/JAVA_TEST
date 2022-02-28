@@ -20,4 +20,4 @@ Selenium için pom.xml dosyasına aşağıdaki modul eklenmeli
 ```
 
 
-chrome’a selecturhub ekle
+
