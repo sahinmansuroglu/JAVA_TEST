@@ -1,1 +1,1 @@
- - chrome’a selecturhub ekle
+ - chrome’a selecturhub ve chropath ekle
