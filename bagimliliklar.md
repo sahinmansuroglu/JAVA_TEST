@@ -1,22 +1,15 @@
-Selenium için pom.xml dosyasına aşağıdaki modul eklenmeli
+Selenium için eklenecek moduller
 
 ```xml
 
-<dependencies>
-	<dependency>
-	    <groupId>org.seleniumhq.selenium</groupId>
-	    <artifactId>selenium-java</artifactId>
-	    <version>4.1.2</version>
-	</dependency>
-<dependency>
-  <groupId>org.slf4j</groupId>
-  <artifactId>slf4j-simple</artifactId>
-  <version>1.7.21</version>
-</dependency>
-
-
-</dependencies>
-
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="coverlet.collector" Version="3.1.0" />
+    <PackageReference Include="Selenium.Support" Version="4.1.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.1.0" />
+    <PackageReference Include="WebDriverManager" Version="2.12.4" />
 ```
 
 
