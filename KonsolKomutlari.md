@@ -9,3 +9,7 @@ dotnet test CSharpSelenFrameworkNet5.csproj --filter TestCategory=Smoke
 > Regression kategorisindeki testleri çalıştırır
 
 dotnet test CSharpSelenFrameworkNet5.csproj --filter TestCategory=Regression
+
+> Browser name'i terminalden alma
+
+ dotnet test --% --filter TestCategory=Regression -- TestRunParameters.Parameter(name=\"browserName\", value=\"Chrome\")
