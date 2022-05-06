@@ -44,6 +44,7 @@ By.linkText("Forgot your password?")
 ### XPath ###
 
 ```csharp
+(//div[@class='mainflip'])[2]
 By.xpath("//input[@placeholder='Name']")
 By.xpath("//input[@type='text'][2]")
 By.xpath("//form/input[3]")
