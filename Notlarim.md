@@ -344,3 +344,26 @@
         }
     }
   ```
+
+### WindowHandle ###
+```csharp  
+ [Test]
+        public void WindowHandle()
+        {
+           //Aşağıdaki kod mevcut window'un ıd sini verir
+            string parentWindowId = driver.CurrentWindowHandle;
+            driver.FindElement(By.ClassName("blinkingText")).Click();
+           
+            Assert.AreEqual(2, driver.WindowHandles.Count,"Window Count Hatası");
+            //Aşağıdaki kod 2. Windowa geçiş yapar
+            string childWindowName = driver.WindowHandles[1];
+            driver.SwitchTo().Window(childWindowName);
+            string realName = "RAHULSHETTY2105";
+            string name1 = driver.FindElement(By.CssSelector(".clearfix b:nth-child(2)")).Text;
+           
+            driver.SwitchTo().Window(parentWindowId);
+            driver.FindElement(By.Id("username")).SendKeys(name1);
+            Assert.AreEqual(realName, name1, "Name eşleşme Hatası");
+        }
+        
+```
