@@ -152,8 +152,10 @@
         }
 
     }
-    ```
+```
+
 ### test_Alert ###
+
 ```csharp
         [Test]
         public void test_Alert()
@@ -169,7 +171,7 @@
             StringAssert.Contains(name, alertText, "Name alert'de geçiyor");
 
         }
- ```
+```
 ### EndToEndFlow ###
 ```csharp       
         [Test]
@@ -224,7 +226,7 @@
             StringAssert.Contains("Success", confirmText);
             
         }
-  ```
+```
 ### test_AutosuggestiveDropDowns ###
 ```csharp      
          [Test]
@@ -254,7 +256,7 @@
             TestContext.Progress.WriteLine("Çıktı1: "+driver.FindElement(By.CssSelector("#autocomplete")).Text);
             TestContext.Progress.WriteLine("Çıktı2: " + driver.FindElement(By.CssSelector("#autocomplete")).GetAttribute("value"));
         }
- ```
+```
 ### test_Actions ###
 ```csharp       
         [Test]
@@ -280,7 +282,7 @@
             a.DragAndDrop(driver.FindElement(By.Id("draggable")), driver.FindElement(By.Id("droppable"))).Perform();
         }
     }
-  ```
+```
 ### SortTables1 ###
 ```csharp  
       [Test]
@@ -343,7 +345,7 @@
             Assert.AreEqual(a, b,"Sıralama Hatası");
         }
     }
-  ```
+```
 
 ### WindowHandle ###
 ```csharp  
