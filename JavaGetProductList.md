@@ -1,6 +1,6 @@
 // Get product list and print product name using List and foreach
 
-'''java
+```java
  public static  void main(String [] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
@@ -15,4 +15,5 @@
             System.out.println(element.findElement(By.cssSelector("h5")).getText());
         }
         Thread.sleep(5000);
-'''
+
+```
