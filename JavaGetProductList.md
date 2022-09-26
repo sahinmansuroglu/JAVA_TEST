@@ -1,4 +1,4 @@
-// Get product list and print product name using List and foreach
+### Get product list and print product name using  and foreach  and stream
 
 ```java
  public static  void main(String [] args) throws InterruptedException {
@@ -14,6 +14,13 @@
         for (WebElement element : products  ) {
             System.out.println(element.findElement(By.cssSelector("h5")).getText());
         }
+        
+        products.forEach(x->{
+            System.out.println(x.findElement(By.cssSelector("h5")).getText());
+        });
         Thread.sleep(5000);
-
+        Thread.sleep(5000);
+}
 ```
+
+### Get product by filter
